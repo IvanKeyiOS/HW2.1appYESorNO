@@ -14,13 +14,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        answerButton.layer.cornerRadius = 16
+
         answerButton.layer.shadowColor = UIColor.systemCyan.cgColor
         answerButton.layer.shadowOpacity = 10
-//        answerButton.setTitle("Ask", for: .normal)
-//        answerButton.backgroundColor = UIColor.systemRed
-        
-       
+        //        answerButton.setTitle("Ask", for: .normal)
+        //        answerButton.backgroundColor = UIColor.systemRed
+        //        answerButton.layer.cornerRadius = 16
     }
     
     @IBAction func answerButtonAction(_ sender: Any) {
