@@ -11,6 +11,7 @@ Main Screen first screenshot
 
 ![](https://github.com/IvanKeyiOS/HW2.1appYESorNO/blob/main/2.png)
 
+
 Main Screen second screenshot
 
 
