@@ -26,17 +26,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sye-GH-Itm">
-                                <rect key="frame" x="214" y="712" width="150" height="50"/>
-                                <color key="backgroundColor" red="0.72568904010000002" green="0.37623703530000002" blue="0.96640230429999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="279" y="757" width="110" height="50"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="KHx-hc-g7t"/>
                                     <constraint firstAttribute="height" constant="50" id="X8b-Yh-460"/>
-                                    <constraint firstAttribute="width" constant="150" id="nBK-YQ-ITQ"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Get Answer">
+                                    <backgroundConfiguration key="background" cornerRadius="16">
+                                        <color key="backgroundColor" systemColor="tableCellBlueTextColor"/>
+                                    </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" systemColor="systemGray4Color"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="answerButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qLD-F5-id1"/>
@@ -46,14 +49,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sye-GH-Itm" secondAttribute="trailing" constant="25" id="2LA-2Z-jzh"/>
                             <constraint firstItem="kEs-kL-VVl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ar6-ug-asf"/>
-                            <constraint firstItem="kEs-kL-VVl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Crf-Aw-kIi"/>
+                            <constraint firstItem="kEs-kL-VVl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Crf-Aw-kIi"/>
                             <constraint firstItem="aGR-18-hqY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DUd-Ds-2ln"/>
                             <constraint firstAttribute="bottom" secondItem="kEs-kL-VVl" secondAttribute="bottom" id="LHN-JC-s8F"/>
                             <constraint firstItem="aGR-18-hqY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MON-J9-Li5"/>
-                            <constraint firstItem="kEs-kL-VVl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TqP-kG-Zhh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sye-GH-Itm" secondAttribute="trailing" constant="50" id="sWE-62-Poz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sye-GH-Itm" secondAttribute="bottom" constant="100" id="uB7-rb-SlN"/>
+                            <constraint firstItem="kEs-kL-VVl" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="TqP-kG-Zhh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sye-GH-Itm" secondAttribute="bottom" constant="55" id="gLe-kw-JdX"/>
                         </constraints>
                     </view>
                     <connections>
@@ -67,9 +70,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="1152" height="1728"/>
+        <image name="background" width="122" height="213.33332824707031"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tableCellBlueTextColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
