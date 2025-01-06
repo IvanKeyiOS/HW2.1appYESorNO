@@ -45,6 +45,18 @@
                                     <action selector="answerButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qLD-F5-id1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yu4-af-UdP">
+                                <rect key="frame" x="137" y="198" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGw-8J-4iN">
+                                <rect key="frame" x="277" y="198" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" systemColor="systemRedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -54,14 +66,20 @@
                             <constraint firstItem="kEs-kL-VVl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Crf-Aw-kIi"/>
                             <constraint firstItem="aGR-18-hqY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DUd-Ds-2ln"/>
                             <constraint firstAttribute="bottom" secondItem="kEs-kL-VVl" secondAttribute="bottom" id="LHN-JC-s8F"/>
+                            <constraint firstItem="yu4-af-UdP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-250" id="LRJ-fc-00M"/>
                             <constraint firstItem="aGR-18-hqY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MON-J9-Li5"/>
+                            <constraint firstItem="yu4-af-UdP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-70" id="Qef-q6-LFj"/>
                             <constraint firstItem="kEs-kL-VVl" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="TqP-kG-Zhh"/>
+                            <constraint firstItem="yGw-8J-4iN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-250" id="fnn-eC-a2d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sye-GH-Itm" secondAttribute="bottom" constant="55" id="gLe-kw-JdX"/>
+                            <constraint firstItem="yGw-8J-4iN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="70" id="yaz-TX-sQ0"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerButton" destination="sye-GH-Itm" id="BR6-Te-46P"/>
                         <outlet property="answerLabel" destination="aGR-18-hqY" id="fSY-m8-GXC"/>
+                        <outlet property="countNoLabel" destination="yu4-af-UdP" id="vRD-JN-pPy"/>
+                        <outlet property="countYesLabel" destination="yGw-8J-4iN" id="eO1-jZ-Rbe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -76,6 +94,9 @@
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tableCellBlueTextColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
