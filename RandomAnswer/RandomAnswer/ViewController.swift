@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     //MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setButton()
         setLabel()
     }
@@ -28,14 +29,10 @@ class ViewController: UIViewController {
     private func setButton() {
         answerButton.layer.shadowColor = UIColor.systemCyan.cgColor
         answerButton.layer.shadowOpacity = 10
-        //        answerButton.setTitle("Ask", for: .normal)
-        //        answerButton.backgroundColor = UIColor.systemPink
-        //        answerButton.layer.cornerRadius = 16
     }
     
     private func setLabel() {
         answerLabel.text = ""
-//        answerLabel.textColor = UIColor.white
         answerLabel.shadowColor = UIColor.orange
         answerLabel.shadowOffset = CGSize(width: -2, height: -2)
         
